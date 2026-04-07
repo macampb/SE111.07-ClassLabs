@@ -1,0 +1,25 @@
+/*all p tags */
+p{
+    color:red; 
+}
+
+/* All h1 tags */
+h1{
+    font-size: 100px;
+}
+
+/* Hastags define an id*/
+#funny-stuff{
+    background-color: blue;
+    border: 10px dotted silver
+}
+
+/* The . defines a class */
+.joemama{
+    font-weight: 900;
+    text-decoration: underline;
+    color: goldenrod
+}
+body{
+    background-color: darkslategray
+}
