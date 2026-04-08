@@ -16,10 +16,10 @@ body{
     height:800px;
     background-color:lightsteelblue;
 
-    animation-name: sizeChange;
+    /*animation-name: sizeChange;
     animation-duration: 20s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
 }
 
 #header{
@@ -38,8 +38,22 @@ body{
     animation-iteration-count: infinite;
 }
 
-#nav-bar{
-    /*Setting all the text to the center*/
+
+/* psuedo class */ 
+#header:hover{
+    font-size: 100px;
+}
+
+a:visited{
+    color: limegreen
+}
+
+a:link{ /*non-visited links*/ 
+    font-size: 20PX;
+    border: 2px solid purple;
+}
+
+#nav-bar{ /*Setting all the text to the center*/
     height: 50px;
     text-align: center;
     border-top: 3px solid whitesmoke;
@@ -62,9 +76,13 @@ body{
     padding: 30px;
     border: 3px solid blanchedalmond;
 
-    animation-name: percentageAnimation;
+
+    font-family: 'Noto Sans KR';
+    
+
+    /*animation-name: percentageAnimation;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
 }
 
 #loremIpsum{
