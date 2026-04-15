@@ -4,16 +4,23 @@
 }
 
 body {
-    background: #0f0f14;
+    background-image: url(./images/bg.jpeg);
+    background-size: contain;
+    background-color: #1b1b25;
     color: #f2f2f2;
-    line-height: 1.6;
+    line-height: 1.7;  
+
+    
 }
 
 #container {
-    width: 90%;
-    max-width: 1100px;
+    width: 980px;
     margin: auto;
     padding: 20px;
+
+    border-radius: 5px;
+    border: slategray solid 6px;
+    background-color: #0f0d0df1;
 }
 
 hr {
@@ -29,11 +36,40 @@ hr {
     padding: 20px 10px;
 }
 
+
 h1 {
-    font-size: 2.2rem;
+    font-size: 50px;
     letter-spacing: 1px;
-    color: palevioletred;
+    color: rgba(212, 192, 10, 0.849);
+
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
+
+
+/* ANIMATION */
+@keyframes glow{
+    from{ text-shadow: 
+        0 0 20px #fff,
+        0 0 30px #ff66b3a4,
+        0 0 40px #ff66b2,
+        0 0 50px #ff66b2,
+        0 0 60px #ff66b2,
+        0 0 70px #ff66b2;
+    }
+
+    to{ text-shadow: 
+        0 0 20px #fff,
+        0 0 30px #ff66b38f,
+        0 0 40px #ff66b2,
+        0 0 50px #ff66b2,
+        0 0 60px #ff66b39a,
+        0 0 70px #ff66b36b;
+
+    }
+}
+
 
 /* NAVIGATION */
 #nav {
@@ -55,9 +91,9 @@ h1 {
 }
 
 .nav-btn:hover {
-    background: palevioletred;
-    color: #000;
+    background: rgba(216, 112, 147, 0.644);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 /* CONTENT */
@@ -78,11 +114,6 @@ h3 {
     color: #ffffff;
     border-left: 4px solid palevioletred; /*Cast Indent*/
     padding-left: 10px;
-}
-
-#content p {
-    margin: 10px 0;
-    color: #d6d6d6;
 }
 
 /* movie posters */
@@ -127,3 +158,5 @@ iframe {
 #footer a:hover {
     text-decoration: underline;
 }
+
+/* ANIMATIONS */
