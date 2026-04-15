@@ -1,16 +1,13 @@
 .cc-img{
-    width: 290px;
-    height: 250px;
+    height: 50px;   
 }
 
 body {
-    background-image: url(./images/bg.jpeg);
+    background-image: url(./images/blackSheet.jpg);
     background-size: contain;
     background-color: #1b1b25;
     color: #f2f2f2;
-    line-height: 1.7;  
-
-    
+    line-height: 1.7;     
 }
 
 #container {
@@ -19,17 +16,16 @@ body {
     padding: 20px;
 
     border-radius: 5px;
-    border: slategray solid 6px;
-    background-color: #0f0d0df1;
+    border: black solid 10px;
+    background-color: #000000de;
 }
 
 hr {
     border: none;
     height: 1px;
-    background: slategray;
-    margin: 20px 10px;
+    background:rgba(212, 192, 10, 0.356);
+    margin: 10px;
 }
-
 
 #header {
     text-align: center;
@@ -70,12 +66,19 @@ h1 {
     }
 }
 
+@keyframes textSize{
+     from{
+        font-size: 14px;
+    }
+    to{ 
+        font-size: 16px;
+    }
+}
 
 /* NAVIGATION */
 #nav {
     margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex ;
     justify-content: center;
     gap: 10px;
 }
@@ -87,7 +90,10 @@ h1 {
     padding: 10px 15px;
     border-radius: 8px;
     transition: all 0.3s ease;
-    font-size: 0.95rem;
+    font-size: 16px;
+
+    animation-name: textSize;
+    animation-duration: 3s;
 }
 
 .nav-btn:hover {
@@ -116,21 +122,16 @@ h3 {
     padding-left: 10px;
 }
 
-/* movie posters */
-#content img {
-    display: block;
-    margin: 15px auto;
+img{
+    display: flex;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    padding: 5px;
 }
 
-/* trailers */
-iframe {
-    display: block;
-    margin: 15px auto;
-    border: none;
+iframe{
+    display: flex;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    padding: 5px;
 }
 
 /* info boxes */
@@ -159,4 +160,3 @@ iframe {
     text-decoration: underline;
 }
 
-/* ANIMATIONS */
