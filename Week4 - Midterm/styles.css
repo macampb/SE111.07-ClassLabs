@@ -160,3 +160,10 @@ iframe{
     text-decoration: underline;
 }
 
+.validated {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+}
+
