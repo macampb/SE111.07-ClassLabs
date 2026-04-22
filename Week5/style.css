@@ -1,0 +1,23 @@
+h2{
+    color:red
+}
+
+/* Set ultiple elements to the same thing  */
+table,thead,tr,td{
+    border: 1px dotted salmon;
+    padding: 5px;
+    text-align: center;
+}
+
+table{
+    background-color: yellow;
+}
+
+/* Psuedo Class */
+tr:nth-child(even){
+    background: lightpink;
+}
+
+tr:nth-child(odd){
+    background-color: lightskyblue;
+}
