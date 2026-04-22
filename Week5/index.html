@@ -72,6 +72,103 @@
             </tr>
         </tbody>
      </table>
+     <br><hr>
+
+     <h2>Basic Form Example</h2>
+
+     <form action="#" method="post">
+        <!-- Input tags are inline ( auto no line breaks) -->
+         <!-- Defining a text field -->
+        <input type="text" name="username" placeholder="Enter Username...">
+        <br>
+        <input type="text" name="username" placeholder="Enter Password...">
+        <br>
+        <!-- Defining a button -->
+        <input type="button" name="abutton" value="Click Me!">
+     </form><hr>
+
+     <form action="#" method="get">
+        <!-- defining a table -->
+        <table>
+            <thead>
+                <tr>
+                    <td>Label</td>
+                    <td>Input</td>
+                </tr>
+            </thead><br>
+
+            <h2>Table with Input</h2>
+            <!-- Defining a LOT of input types -->
+            <tbody>
+
+                <!-- Text Box -->
+                <tr>
+                    <td>Text Input</td>
+                    <td><input type="text" name="text-input"></td>
+                </tr>
+
+                <!-- Checkbox -->
+                <tr>
+                    <td>Checkbox</td>
+                    <td><input type="checkbox" name="checkbox"></td>
+                </tr>
+
+                <!-- Color Wheel -->
+                <tr>
+                    <td>Color</td>
+                    <td><input type="color" name="color"></td>
+                </tr>
+
+                <!-- Date Box -->
+                <tr>
+                    <td>Date</td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+
+                <!-- File -->
+                <tr>
+                    <td>File</td>
+                    <td><input type="file" name="file"></td>
+                </tr>
+
+                <!-- Time -->
+                 <tr>
+                    <td>Time</td>
+                    <td><input type="time" name="time"></td>
+                 </tr>
+
+                 <!-- Radio buttons -->
+                  <tr>
+                    <td>Radio Button</td>
+                    <td>
+                        <!-- labels are for buttons -->
+                         <!-- they require a for attribute which must the name or id -->
+                          <!-- Defining the same name allows us to pick only 1 option -->
+                        <label for="yes">Yes:&nbsp;</label>
+                        <input type="radio" name="yes-or-no" value="yes" id="yes">
+                        <br>
+                        <label for="no">No:</label>
+                        <input type="radio" name="yes-or-no" value="no" id="no">
+                        <br>
+                        <label for="maybe">Maybe:</label>
+                        <input type="radio" name="yes-or-no" value="maybe" id="maybe">
+                    </td>
+                  </tr>
+
+                  <!-- Some inputs have special tags -->
+                   <tr>
+                        <td>Text Area</td>
+                        <!-- Like text area! cols is heights; rows is the width -->
+                        <td><textarea name="textarea" cols="30" rows="10" placeholders="Enter your message"></textarea></td>
+                   </tr>
+
+
+                
+
+
+            </tbody>
+        </table>
+     </form>
     
 </body>
 </html>
