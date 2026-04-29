@@ -8,7 +8,7 @@
 <body>
 
     <script>
-
+        /*
         //This is a comment!
 
         //This is an example of a variable
@@ -140,8 +140,34 @@
         var num1 = Number(prompt("Whta is the first number?"))
         var num2 = Number(prompt("What is the second number?"))
         console.log(add(num1,num2))
+        */
 
+        // Basic Calculator Lab 
+        var calc = prompt("What operation will be used? [add, subtract, multiply, or divide]")
+        var num1 = Number(prompt("What is the first number?"))
+        var num2 = Number(prompt("What is the second number?"))
 
+        function calculator(x,y){
+            if (calc == "add"){
+            return x + y
+            }
+
+            if (calc == "subtract"){
+                return x - y
+            }
+
+            if (calc == "multiply"){
+                return x * y
+            }
+
+            if (calc == "divide"){
+                return x / y
+            }
+        }
+
+        calculation = calculator(num1, num2)
+        alert(calculation)
+    
 
     </script>
     
