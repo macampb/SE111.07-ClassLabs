@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 | Javascript! </title>
+</head>
+<body>
+
+    <script>
+
+        //This is a comment!
+
+        //This is an example of a variable
+        var a = 6
+
+        //Example of a string
+        var b = "Github"
+
+        // Example of a boolean (true/false)
+        var c = true
+
+        //Example that shows that variable names can be as long as need
+        //You should be specific with variables                                                    
+        var hiThisIsAStupidLongVariableName = "chopped cheese"
+
+        //Logging something to the console (F12 > Console)
+        console.log("Test")
+
+        //You can pass numbers
+        console.log(52)
+
+        //You can also pass variables
+        console.log(b)
+
+        //If statements!
+        //Conditional Operators
+        // >= Greater/Equal Than      
+        // <= Less/Equal Than
+        // > Greater Than              
+        // < Less Than
+        //!= not equal (ONLY CARES ABOUT THE VALUES)
+        // == equal to (ONLY CARE ABOUT THE VALUES)
+        // === equal to VALUE AND TYPE
+
+        var numOne = 2
+        var numTwo = 49
+        var numThree = 1
+        var numFour = 1
+
+        //An if statement
+        if (numThree !== numFour){
+            // adding all the numbers together
+            console.log(numOne+ numTwo + numThree + numFour)
+        }
+
+        if (numOne === 2 && numTwo > 0){
+            console.log(numThree - numFour)
+        }
+
+        if (numThree !== 4 || numFour >= 0 || numOne === 2 || numTwo < 300){
+            console.log("I Just Made This Up Yo.")
+        }
+
+        //Arithmetic 
+
+        var x = 75
+
+        //Adds 1
+        x++
+        console.log(x)
+
+        //Adding 5
+        x = x + 5
+        console.log(x)
+
+        x += 5
+        console.log(x)
+
+        var y = 1000
+        x += y
+        console.log(x)
+
+        //Setting x to y
+        x = y 
+        console.log(x)
+
+        x*=2
+        console.log(x)
+
+        x--
+        console.log(x)
+
+        //Example of a function
+        function example(){
+            console.log("Hello World")
+        }
+
+        //Example of calling a function
+        example()
+
+        //Example of a function with parameters
+        function add(x,y){
+            //Example of returning data back
+            return x+y
+        }
+
+        //Example of calling that add function
+        var fName = "Mikhala"
+        var lName = "Campbell"
+
+        var name = add(fName, lName)
+        console.log(name)
+
+        //Four parameters
+        function subtract(x,y,z,a){
+            return x-y-z-a
+        }
+
+        var subX = 100
+        var subY = 75 
+        var subZ = 50
+        var subA = 25
+
+        var sub = subtract(subX, subY, subZ, subA)
+        console.log(sub)
+
+        // An example of a built in method
+        // Alert's make something pop up!
+        alert("Hello This is an alert")
+        alert(subtract(subX, subY, subZ, subA))
+        alert("Joe's Mama")
+
+        //Prompt takes user input and allows us to store it in a variable
+        var firstName = prompt("What is your name?")
+        console.log(firstName)
+
+        //Prompt stoes values a strings
+        //Number allows us to change the type to number
+        var num1 = Number(prompt("Whta is the first number?"))
+        var num2 = Number(prompt("What is the second number?"))
+        console.log(add(num1,num2))
+
+
+
+    </script>
+    
+</body>
+</html>
