@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 7 | </title>
+    <title>Week 7 | More Javascript</title>
 </head>
 <body>
+    <h1>Week 7 | MORE JAVASCRIPT </h1>
+
+    <!-- Setting up Display -->
+    <h2> Current Number </h2>
+    <h2 id="number">0</h2>
+    <hr>
+
+    <!-- Setting up Buttons -->
+    <input type="button" id="increment" value="Increase">
+    <input type="button" id="decrement" value="Decrease">
+
+    <br>
+    <br>
+    <br>  
+    
+    <!-- Setting up a joke container -->
+    <div id="jokeContainer">
+        <!-- Question Div -->
+        <div id="question">
+            <h2>Damn Little Lady! You sure can put it away.</h2>
+        </div>
+
+        <!-- Answer Div -->
+         <div id="answer">
+
+         </div>
+
+         <!-- the button -->
+          <input type="button" id="giveAnswer" value="Perhaps a Salad?">
+    </div>
+
+    <script>
+        // Getting the number text
+        var numberText = document.querySelector("#number")
+
+        var increaseButton = document.querySelector("#increment")
+        var decreaseButton = document.querySelector("#decrement")
+
+        var currentNumber = 0; 
+
+        function addToNumber()
+        {
+            // Increment the current number
+            currentNumber++;
+            // Setting the innerHTML
+            numberText.innerHTML = currentNumber
+        }
+
+        function subtractFromNumber()
+        {
+            // Decrementing the number
+            currentNumber--;
+            // Setting the inner HTML
+            numberText.innerHTML = currentNumber
+        }
+
+        // Adding event listeners
+        increaseButton.addEventListener("click", addToNumber)
+        decreaseButton.addEventListener("click", subtractFromNumber)
+
+        var giveJokeAnswer = document.querySelector("#giveAnswer")
+        var answerContainer = document.querySelector("#answer")
+
+        function giveAnswer()
+        {
+            answerContainer.innerHTML += "<h4>Perhaps Not</h4>"
+        }
+
+        giveJokeAnswer.addEventListener("click", giveAnswer)
+
+        
+
+    </script>
     
     
 </body>
