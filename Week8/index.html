@@ -30,6 +30,61 @@
             pizzaSquares()
         }
 
+        // Examples of arrays
+        var movies = [
+            "Spider-Man",
+            "Spirited Away",
+            "Avengers",
+            "Conjuring",
+            "The Minecraft Movie",
+            "Minions Movie",
+        ]
+
+        console.log(movies[4]) 
+        //The Minecraft Movie is in position 4 (starts at 0)
+        console.log(movies[2]) 
+        //Avengers
+
+        // Output all the movies
+        for (let i=0; i< movies.length; i++)
+        {
+            console.log(movies[i])
+        }
+
+        var numberArray = []
+
+        for (let i=0; i<7; i++)
+        {
+            numberArray.push(i*5432 / 93 + 23)
+        }
+
+        console.log(numberArray)
+
+        // An array can hold several different things
+        // HOWEVER YOU SHOULD NOT DO THIS.
+        // ALL VALUES SHOULD BE THE SAME DATA TYPE
+
+        // An example of a 2d array
+        var twoDArray = [
+            [0,0,0,0,0,0],
+            [1,24,57,85,1,1],
+            [23,123,6234,124,123,1],
+            [1,2,3,4,5,6],
+        ]
+
+        // Loops through each array
+        for (let x=0; x < twoDArray.length; x ++)
+        {
+            // Loops inside each array to get values, making sure we only loop trough the size of the array
+            for (let y=0; y < twoDArray[x].length; y++){
+                // Outputs the Values
+                console.log(twoDArray[x][y])
+            }
+        }
+
+        
+
+
     </script>
     
 </body>
