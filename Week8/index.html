@@ -7,6 +7,17 @@
 </head>
 <body>
 
+    <div id="favoriteMovies"> 
+        <!-- Setting up movies -->
+        <h2>My Favorite Movies are: </h2>
+        <!-- unordered list -->
+        <ul id="listOfMovies">  </ul>
+
+        <h2> My Favorite Foods are: </h2>
+        <ol id="listOfFood"> </ol>
+
+
+    </div>
     <script>
 
         var numberForLoop = 0
@@ -37,7 +48,7 @@
             "Avengers",
             "Conjuring",
             "The Minecraft Movie",
-            "Minions Movie",
+            "Minions Movie"
         ]
 
         console.log(movies[4]) 
@@ -83,7 +94,66 @@
         }
 
         
+            // Objects
+        var person={
+            first: "Mikhala",
+            last: "Campbell" //You dont need a comma for the last value
+        }
 
+        console.log(person.first)
+        console.log(person.last)
+
+        person.first = "Gage"
+        person.last = "Carrothead?"
+
+        console.log(person.first)
+        console.log(person.last)
+
+        var car = {
+            wheels: 2000,
+            hasEngine: true,
+            oil: "synthetic",
+            windows: 1,
+            drive: function () {console.log("vroom vroom")}
+        }
+
+        // Accessing the data inside car
+        console.log("This Car has " + car.wheels + " wheels")
+        // Calling the function
+        car.drive()
+
+
+        // Examples with For Loops and objects and arrays
+         
+        var unorderedMovieList = document.querySelector("#listOfMovies")
+        
+        for (let i=0; i < movies.length; i++)
+        {
+            // Adding to the HTML with each movie
+            unorderedMovieList.innerHTML += "<li>" + movies[i] + "</li>"
+        }
+
+        // LAB
+        var food = [
+            "Chinese Food",
+            "Sushi",
+            "Jerk Chicken",
+            "Mac n Cheese",
+            "Chipotle",
+            "Columbian Food"
+        ]
+
+        var orderedFoodList = document.querySelector("#listOfFood")
+
+        for (let i=0; i < food.length; i++)
+        {
+            orderedFoodList.innerHTML += "<li>" + food[i] + "</li>"
+        }
+
+        // How to loop through all the keys in an object
+        for (let key in car){
+            console.log(car[key])
+        }
 
     </script>
     
